@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
+#pdf-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.buttons {
+  margin: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ }
+ 
+ .buttons button{
+   width: 300px;
+   min-height: 100px;
+   background-color: rgb(255, 255, 255);
+   border: 1px solid #ccc;
+   margin: 20px 0;
+   padding: 10px;
+ }
+ .pdfViewer {
+  position: relative;
+  height: 90vh;
+  overflow: auto;
+  padding: 10px;
 }
